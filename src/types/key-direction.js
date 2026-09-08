@@ -16,4 +16,11 @@ const KEY_DIRECTION = {
     d: Direction.RIGHT,
 }
 
-export { KEY_DIRECTION, Direction };
+const OPPOSITE_DIRECTION = {
+    [Direction.UP]: Direction.DOWN,
+    [Direction.DOWN]: Direction.UP,
+    [Direction.LEFT]: Direction.RIGHT,
+    [Direction.RIGHT]: Direction.LEFT,
+}
+
+export { KEY_DIRECTION, Direction, OPPOSITE_DIRECTION };
